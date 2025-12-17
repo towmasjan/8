@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Jump Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🚀 Sky Jump</h1>
+            <div class="score-board">
+                <div class="score">Wynik: <span id="score">0</span></div>
+                <div class="high-score">Najlepszy: <span id="highScore">0</span></div>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="controls">
+            <button id="leftBtn" class="control-btn">←</button>
+            <button id="rightBtn" class="control-btn">→</button>
+        </div>
+
+        <div id="gameOver" class="game-over hidden">
+            <h2>Koniec gry!</h2>
+            <p>Twój wynik: <span id="finalScore">0</span></p>
+            <button id="restartBtn" class="restart-btn">Zagraj ponownie</button>
+        </div>
+
+        <div class="instructions">
+            <p>🎮 Użyj strzałek ← → lub przycisków do sterowania</p>
+            <p>🎯 Skacz jak najwyżej!</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
